@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="header">
+        <p>
+            Current version is 14.3.1
+        </p>
+    </div>
+    <div id="wheel" class="wheel">
+    </div>
+    <div id="abilities" class="abilities">
+        <div class="ability" onclick="selectAbility('P')"> <!-- Passive -->
+            <p>P</p>
+            <div id="P"></div>
+        </div>
+        <div class="ability" onclick="selectAbility('Q')"> <!-- Q -->
+            <p>Q</p>
+            <div id="Q"></div>
+        </div>
+        <div class="ability" onclick="selectAbility('W')"> <!-- W -->
+            <p>W</p>
+            <div id="W"></div>
+        </div>
+        <div class="ability" onclick="selectAbility('E')"> <!-- E -->
+            <p>E</p>
+            <div id="E"></div>
+        </div>
+        <div class="ability" onclick="selectAbility('R')"> <!-- R -->
+            <p>R</p>
+            <div id="R"></div>
+        </div>
+    </div>
+    <div class="resetWrapper">
+        <button disabled id="reset" class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
